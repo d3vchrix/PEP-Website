@@ -1,0 +1,74 @@
+    <div class="py-5" style="background-color: #333;">
+        <div class="container">
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card bg-dark text-white border-0" style="transition: transform 0.3s;">
+                                    <img src="header1.jpg" class="card-img" alt="Project 1"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                        <h5 class="card-title">#PROJECT NAME 1</h5>
+                                        <p class="card-text small">Integrated Marketing Communications</p>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="bi bi-heart me-1"></i> 1k
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card bg-dark text-white border-0" style="transition: transform 0.3s;">
+                                    <img src="header2.png" class="card-img" alt="Project 2"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                        <h5 class="card-title">#PROJECT NAME 2</h5>
+                                        <p class="card-text small">Integrated Tourism Development & Consulting</p>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="bi bi-heart me-1"></i> 2k
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card bg-dark text-white border-0" style="transition: transform 0.3s;">
+                                    <img src="header1.jpg" class="card-img" alt="Project 3"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                        <h5 class="card-title">#PROJECT NAME 3</h5>
+                                        <p class="card-text small">Information & Communications Technology Solutions</p>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="bi bi-heart me-1"></i> 3k
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card bg-dark text-white border-0" style="transition: transform 0.3s;">
+                                    <img src="header2.png" class="card-img" alt="Project 4"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                        <h5 class="card-title">#PROJECT NAME 4</h5>
+                                        <p class="card-text small">Integrated Marketing Communications</p>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="bi bi-heart me-1"></i> 4k
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
