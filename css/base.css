@@ -11,9 +11,10 @@ html, body {
   background-color: white;
   color: #333;
 }
+
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px;
-  padding: 10px;
+  margin: 10px 0px;
+  padding: 10px 0px;
   color: #000;
 }
 
@@ -26,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   padding: 20px;
 }
+
 .hero h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -34,7 +36,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-medium {
-  min-height: 40vh;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 .hero-header {
@@ -52,12 +57,62 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.hero-orange { background: radial-gradient(circle, #ff4d00, #ffcc00, #00b894); color: #000; }
-.hero-blue   { background: radial-gradient(circle at center, #28b8e5, transparent), linear-gradient(to right, #00bcf5, #28b8e5); color: white; }
-.hero-green  { background: radial-gradient(circle at top right, #56ab2f, #a8e063); color: #003300; }
+.hero-header-no-image {
+  background-image:
+    radial-gradient(ellipse 50% 100% at 25% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 75% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 50% 100%, rgba(255, 255, 255, 0.8), transparent),
+    linear-gradient(-45deg, #0090bd, #2a9e5e, #fd8d05, #f91a0b),
+    linear-gradient(rgba(90, 90, 90, 0.35), rgba(255, 255, 255, 0.35));
+  background-size: 1200px auto, 800px auto, 800px auto, cover, cover;
+  background-position: left top, right top, 60% 120%, center, top left;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay, overlay, overlay, multiply;
+  color: white;
+}
 
-.who-we-are
-{
+.hero-orange {
+   background-image: radial-gradient(ellipse 50% 100% at 25% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 75% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 50% 100%, rgba(255, 255, 255, 0.8), transparent),
+    linear-gradient(to right, #ff4d00, #ffcc00),
+    linear-gradient(rgba(90, 90, 90, 0.35), rgba(255, 255, 255, 0.35));
+  background-size: 1200px auto, 800px auto, 800px auto, cover, cover;
+  background-position: left top, right top, 60% 120%, center, top left;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay, overlay, overlay, multiply;
+  color: white;
+}
+
+.hero-blue {
+  background-image: radial-gradient(ellipse 50% 100% at 25% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 75% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 50% 100%, rgba(255, 255, 255, 0.8), transparent),
+    linear-gradient(to right, #00bcf5, #28b8e5),
+    linear-gradient(rgba(90, 90, 90, 0.35), rgba(255, 255, 255, 0.35));
+
+  background-size: 1200px auto, 800px auto, 800px auto, cover, cover;
+  background-position: left top, right top, 60% 120%, center, top left;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay, overlay, overlay, multiply;
+  color: white;
+}
+
+.hero-green {
+   background-image: radial-gradient(ellipse 50% 100% at 25% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 75% 0%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(ellipse 50% 100% at 50% 100%, rgba(255, 255, 255, 0.8), transparent),
+    linear-gradient(to right, #56ab2f, #a8e063),
+    linear-gradient(rgba(90, 90, 90, 0.35), rgba(255, 255, 255, 0.35));
+
+  background-size: 1200px auto, 800px auto, 800px auto, cover, cover;
+  background-position: left top, right top, 60% 120%, center, top left;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay, overlay, overlay, multiply;
+  color: white;
+}
+
+.who-we-are {
   background-color: #f7f9f9;
 }
 
@@ -75,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: auto;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory; 
+  scroll-snap-type: x mandatory;
 }
 
 .projects::-webkit-scrollbar {
@@ -83,14 +138,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-item {
-  flex: 0 0 25%; 
+  flex: 0 0 25%;
   scroll-snap-align: start;
 }
 
 .project-image {
   width: 100%;
-  height: 350px; 
-  background-color: #2b2e34; 
+  height: 350px;
+  background-color: #2b2e34;
 }
 
 .project-image img {
@@ -104,17 +159,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f7f9f9;
 }
 
-.project-info h6 { 
-  font-size: 16px; 
-  margin-bottom: 4px; 
-  color: #000; 
+.project-info h6 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #000;
   text-transform: uppercase;
 }
 
-.project-info p { 
-  font-size: 12px; 
-  margin-bottom: 5px; 
-  color: #000; 
+.project-info p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #000;
 }
 
 .nav-btn-projects {
@@ -140,8 +195,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.left-arrow { left: 20px; }
-.right-arrow { right: 20px; }
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
 /* ==========================================================================
    4. CONTACT & FORMS
    ========================================================================== */
@@ -193,9 +254,17 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.tab-blue   { background-color: #007bff; }
-.tab-yellow { background-color: #ffc107; }
-.tab-green  { background-color: #28a745; }
+.tab-blue {
+  background-color: #007bff;
+}
+
+.tab-yellow {
+  background-color: #ffc107;
+}
+
+.tab-green {
+  background-color: #28a745;
+}
 
 .testimonial-box {
   background: #f1f1f1;
@@ -247,14 +316,20 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   .project-item {
-    flex: 0 0 50%; 
+    flex: 0 0 50%;
   }
 }
 
 @media (max-width: 576px) {
-  .hero { text-align: center; padding: 40px 20px; }
-  .hero-title { font-size: 1.5rem; }
-  
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
   .service-tabs {
     display: flex;
     flex-wrap: nowrap;
@@ -268,12 +343,274 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .project-item {
-    flex: 0 0 100%; 
+    flex: 0 0 100%;
   }
-  
+
   .nav-btn {
     width: 35px;
     height: 35px;
     font-size: 1rem;
   }
+}
+
+
+.navigation {
+  height: 70px;
+  background: #ffffff;
+}
+
+.navigation::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right,
+      #e32636 0%, #e32636 33.3%,
+      #ffb300 33.3%, #ffb300 66.6%,
+      #0088a9 66.6%, #0088a9 100%);
+  z-index: 999;
+}
+
+.logo {
+  position: absolute;
+  float: left;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+  padding-top: 15px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+
+nav ul li ul li {
+  min-width: 190px;
+}
+
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  height: 70px;
+  width: 70px;
+  color: #000;
+}
+
+.nav-mobile a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    float: none;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  color: #000;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #212529;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* ==========================================================================
+   7. BACK TO TOP BUTTON
+   ========================================================================== */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  background-color: #212529;
+  color: #ffffff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   8. LATEST NEWS PLACEHOLDER STYLES
+   ========================================================================== */
+
+/* Styling for the placeholder boxes to match the image */
+.placeholder-box {
+  background-color: #ededed;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.box-large {
+  min-height: 400px;
+  height: 100%;
+}
+
+.box-small {
+  min-height: 192px;
 }
