@@ -462,12 +462,13 @@ nav ul li ul li a {
   line-height: 70px;
 }
 
-@media only screen and (max-width: 798px) {
+@media(max-width: 798px) {
   .nav-mobile {
     display: block;
   }
+
   .logo{
-    padding-top: 15px;
+     padding: 15px 0px 15px 18px;
   }
 
   nav {
