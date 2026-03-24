@@ -1,8 +1,12 @@
 .hero-title,
 .hero-subtitle,
-.hero a {
+.hero a{
     opacity: 0;
     transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero h1 {
     animation: fadeUp 1s ease forwards;
 }
 
@@ -27,7 +31,7 @@
 
 .card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .card-icon {
@@ -50,13 +54,14 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     transition: width 0.3s ease;
 }
 
 .btn:hover::after {
     width: 100%;
 }
+
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -83,6 +88,7 @@
 .project-item:hover img {
     transform: scale(1.1);
 }
+
 .service-tab {
     transition: all 0.3s ease;
     cursor: pointer;
@@ -91,4 +97,39 @@
 .service-tab:hover {
     transform: translateY(-5px);
     filter: brightness(1.1);
+}
+
+/* --- Custom CSS Animation --- */
+@keyframes fadeUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+        /* Start slightly lower */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at normal position */
+    }
+}
+
+/* Base class for the animation */
+.fade-up {
+    opacity: 0;
+    /* Keeps elements hidden before animation starts */
+    animation: fadeUpAnimation 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Delay classes to create a cascading load effect */
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.3s;
+}
+
+.delay-3 {
+    animation-delay: 0.5s;
 }
