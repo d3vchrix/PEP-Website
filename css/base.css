@@ -414,7 +414,39 @@ nav ul li ul li a {
 .right-arrow { right: 20px; }
 
 /* ==========================================================================
-   5. CONTACT & FORMS
+   5. TESTIMONIALS & QUOTES
+   ========================================================================== */
+.testimonial-box {
+    background: #f1f1f1;
+    border-radius: 8px;
+    position: relative;
+}
+
+.testimonial-box::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f1f1f1 transparent transparent transparent;
+}
+
+.quote {
+    font-size: 24px;
+    color: #5bc0de;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   6. CONTACT & FORMS
    ========================================================================== */
 .contact-container {
   max-width: 600px;
@@ -453,7 +485,7 @@ nav ul li ul li a {
 }
 
 /* ==========================================================================
-   6. COMPONENTS (Tabs, Testimonials, Socials, Utilities)
+   7. COMPONENTS (Tabs, Testimonials, Socials, Utilities)
    ========================================================================== */
 .service-tabs .service-tab {
   padding: 0.75rem;
@@ -558,7 +590,7 @@ nav ul li ul li a {
 .box-small { min-height: 192px; }
 
 /* ==========================================================================
-   7. GENERAL MEDIA QUERIES (Responsiveness)
+   8. GENERAL MEDIA QUERIES (Responsiveness)
    ========================================================================== */
 @media (max-width: 991px) {
   .project-item {
