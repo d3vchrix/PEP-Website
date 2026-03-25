@@ -7,11 +7,11 @@
   box-sizing: border-box; /* Added to prevent padding from breaking widths */
 }
 
+
 html, body {
-  font-family: 'Montserrat', sans-serif;
   background-color: white;
   color: #333;
-  margin: 0; /* Ensures no default body margin */
+  margin: 0;
   padding: 0;
 }
 
@@ -496,9 +496,9 @@ nav ul li ul li a {
   cursor: pointer;
 }
 
-.tab-blue { background-color: #007bff; }
-.tab-yellow { background-color: #ffc107; }
-.tab-green { background-color: #28a745; }
+.tab-blue { background-color: #0090bd; }
+.tab-yellow { background-color: #ffcc00; }
+.tab-green { background-color: #2a9e5e; }
 
 .testimonial-box {
   background: #f1f1f1;
