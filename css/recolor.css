@@ -9,12 +9,14 @@
 }
 
 
-html,
 body {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   color: #333;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 p {
@@ -105,4 +107,12 @@ a {
 .news-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.introduction-text{
+  line-height: 1.6;
+}
+.introduction-h2{
+  font-size: 1.8rem;
+  font-weight: 400;
 }
