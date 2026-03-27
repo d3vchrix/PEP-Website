@@ -82,19 +82,6 @@
 .btn:hover::after {
     width: 100%;
 }
-
-.project-item {
-    transition: transform 0.3s ease;
-}
-.project-image img {
-    transition: transform 0.5s ease;
-}
-
-.project-item:hover img {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
 .service-tab {
     transition: all 0.3s ease;
     cursor: pointer;
@@ -103,7 +90,4 @@
 .service-tab:hover {
     transform: translateY(-5px);
     filter: brightness(1.1);
-}
-.carousel-item {
-  transition: transform 1.2s ease-in-out; 
 }
