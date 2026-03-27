@@ -292,32 +292,14 @@
                     <i class="bi bi-chevron-left"></i>
                 </div>
 
-                <div class="projects d-flex flex-nowrap overflow-hidden custom-swipe-container" id="project-container">
-                    
+                <div class="projects d-flex flex-nowrap" id="project-container">
+
                     <div class="project-item">
                         <div class="project-image"></div>
                         <div class="project-info">
                             <h6>#PROJECT NAME 1</h6>
                             <p>Integrated Marketing Communications</p>
                         </div>
-                    </div>
-
-                    <div class="project-item custom-project-card">
-                        <a href="project-1.html" class="custom-project-link">
-                            <div class="project-image custom-project-img-box"
-                                style="background-image: url('https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg');">
-                            </div>
-                            <div class="project-info custom-project-info-box">
-                                <div class="text-start">
-                                    <h6 class="mb-1 fw-bold">#PROJECT NAME 1</h6>
-                                    <p class="mb-0 text-secondary" style="font-size: 0.85rem;">Integrated Marketing
-                                        Communications</p>
-                                </div>
-                                <div class="d-flex align-items-center gap-1 text-secondary">
-                                    <i class="bi bi-heart"></i> <span style="font-size: 0.9rem;">1k</span>
-                                </div>
-                            </div>
-                        </a>
                     </div>
 
                     <div class="project-item">
@@ -678,7 +660,7 @@
     </section>
     <footer class="footer-image py-4">
         <div class="text-center">
-            <p>&copy; 2026 PEP Website <br>All rights reserved.</p>
+            <p>&copy; 2026 PEP Website<br>All rights reserved.</p>
         </div>
         </div>
     </footer>
@@ -693,22 +675,6 @@
     <script src="js/script.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/header.js"></script>
-    <script>
-        const projectContainer = document.getElementById('project-container');
-        const leftArrow = document.getElementById('left-arrow');
-        const rightArrow = document.getElementById('right-arrow');
-
-        // Amount to scroll per click (Roughly the width of one card + gap)
-        const scrollAmount = 340;
-
-        leftArrow.addEventListener('click', () => {
-            projectContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        });
-
-        rightArrow.addEventListener('click', () => {
-            projectContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>
