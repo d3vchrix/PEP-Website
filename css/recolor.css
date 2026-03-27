@@ -20,15 +20,10 @@ body {
 }
 
 p {
-  line-height: 1;
+  line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   margin: 10px 0px;
   padding: 10px 0px;
   font-weight: 700;
@@ -115,4 +110,14 @@ a {
 .introduction-h2{
   font-size: 1.8rem;
   font-weight: 400;
+}
+.form-control::placeholder {
+  color: #899096;
+  opacity: 1;
+}
+.iti,.iti * {
+  transition: none !important;
+}
+.btn-light{
+  border-color: #bdc3c7;
 }

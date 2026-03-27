@@ -104,7 +104,7 @@
                         Innovation & Technology
                     </h1>
                     <p class="fw-bold hero-subtitle fs-1"></p>
-                    <a href="#introduction" class="btn btn-dark mt-3 fade-up delay-2">Know More</a>
+                    <a href="#introduction" class="btn btn-dark mt-3 fade-up delay-2 text-uppercase">Know More...</a>
                 </div>
             </div>
         </div>
@@ -172,8 +172,9 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-start justify-content-start">
                     <div class="p-2">
-                        <p>Local and global business development capacity.</p>
-                        <p>Commitment and quality of performance engrained in the leadership, business culture and
+                        <p style="line-height: 1.5;">Local and global business development capacity.</p>
+                        <p style="line-height: 1.5;">Commitment and quality of performance engrained in the leadership,
+                            business culture and
                             discipline.
                         </p>
                         <p style="line-height: 1.5;">
@@ -193,7 +194,7 @@
                             solutions for their
                             goals.
                         </p>
-                        <a href="#" class="btn btn-dark mt-3">Meet Team</a>
+                        <a href="#" class="btn btn-light mt-3">Meet Our Team</a>
                     </div>
                 </div>
             </div>
@@ -204,8 +205,8 @@
         <div class="container my-5">
             <div style="max-width: 800px; margin: 0 auto;">
                 <div class="mb-5">
-                    <h3 class="text-center"> Our MISSION</h3>
-                    <p class="text-center text-muted" style="font-size: 0.95rem; line-height: 1.8;">
+                    <h3 class="text-center mission-h3"> Our MISSION</h3>
+                    <p class="text-center text-muted">
                         Become a catalyst for growth in the tourism sector.
                         Unify the tourism sector through digitization.
                         Lead in the formation of public private partnerships.
@@ -214,8 +215,8 @@
                 </div>
 
                 <div class="mb-5">
-                    <h3 class="text-center">Our VISION </h3>
-                    <p class="text-center text-muted" style="font-size: 0.95rem; line-height: 1.8;">
+                    <h3 class="text-center mission-h3">Our VISION </h3>
+                    <p class="text-center text-muted">
                         To be the preferred and most influential partner of the Tourism industry through innovation,
                         technology and
                         creativity.
@@ -223,13 +224,14 @@
                 </div>
 
                 <div>
-                    <h3 class="text-center" style="margin-bottom: 0px; line-height: 1.5; padding-bottom: 0px;">CORE
+                    <h3 class="text-center mission-h3"
+                        style="margin-bottom: 0px; line-height: 1.5; padding-bottom: 0px;">CORE
                         VALUES</h3>
-                    <p class="text-center text-muted mb-4" style="font-size: 0.95rem; line-height: 1.6;">
+                    <p class="text-center text-muted mb-4">
                         Positive Exposure is committed to provide<br>
                         our Clients with the highest standards of professionalism
                     </p>
-                    <div class="text-center text-muted" style="font-size: 0.95rem; line-height: 1;">
+                    <div class="text-center text-muted">
                         <p>• Driven by performances leading to desired results</p>
                         <p>• Data-driven strategy and insights</p>
                         <p>• Attention to Detail</p>
@@ -290,14 +292,32 @@
                     <i class="bi bi-chevron-left"></i>
                 </div>
 
-                <div class="projects d-flex flex-nowrap overflow-hidden" id="project-container">
-
+                <div class="projects d-flex flex-nowrap overflow-hidden custom-swipe-container" id="project-container">
+                    
                     <div class="project-item">
                         <div class="project-image"></div>
                         <div class="project-info">
                             <h6>#PROJECT NAME 1</h6>
                             <p>Integrated Marketing Communications</p>
                         </div>
+                    </div>
+
+                    <div class="project-item custom-project-card">
+                        <a href="project-1.html" class="custom-project-link">
+                            <div class="project-image custom-project-img-box"
+                                style="background-image: url('https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg');">
+                            </div>
+                            <div class="project-info custom-project-info-box">
+                                <div class="text-start">
+                                    <h6 class="mb-1 fw-bold">#PROJECT NAME 1</h6>
+                                    <p class="mb-0 text-secondary" style="font-size: 0.85rem;">Integrated Marketing
+                                        Communications</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-1 text-secondary">
+                                    <i class="bi bi-heart"></i> <span style="font-size: 0.9rem;">1k</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="project-item">
@@ -368,11 +388,13 @@
     <section class="testimonial-section py-5">
         <div class="container">
             <div class="text-center mb-5 header-text">
-                <h2 class="display-5 fw-normal mb-3">Testimonials</h2>
-                <p class="lead text-muted-custom">Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae.</p>
+                <h2 class="fw-normal-custom">Testimonials</h2>
+                <p class="lead-custom text-muted-custom">Quisque diam lorem, interdum vitae, dapibus ac, scelerisque
+                    vitae.</p>
             </div>
 
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="5000">
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
@@ -390,11 +412,10 @@
                                             <span class="quote-icon quote-right">&rdquo;</span>
                                         </p>
                                     </div>
-
                                     <div class="author-area mt-4">
                                         <div class="author-avatar"></div>
                                         <div class="author-info">
-                                            <h5>Juan Dela Paz</h5>
+                                            <h5 class="author-info-title">Juan Dela Paz</h5>
                                             <p>Co-founder, Company Name</p>
                                         </div>
                                         <div class="carousel-controls-custom">
@@ -419,12 +440,72 @@
                                             <span class="quote-icon quote-right">&rdquo;</span>
                                         </p>
                                     </div>
-
                                     <div class="author-area mt-4">
                                         <div class="author-avatar"></div>
                                         <div class="author-info">
-                                            <h5>Dos Cuarto</h5>
+                                            <h5 class="author-info-title">Dos Cuarto</h5>
                                             <p>Co-founder, Company Name</p>
+                                        </div>
+                                        <div class="carousel-controls-custom">
+                                            <a href="#testimonialCarousel" role="button" data-bs-slide="prev"
+                                                class="custom-arrow">&#10094;</a>
+                                            <a href="#testimonialCarousel" role="button" data-bs-slide="next"
+                                                class="custom-arrow">&#10095;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial-bubble">
+                                        <span class="quote-icon quote-left">&ldquo;</span>
+                                        <p class="testimonial-text">
+                                            This is the third testimonial. Suspendisse potenti. Nullam porttitor lacus
+                                            at turpis. Donec posuere vulputate arcu.
+                                            <br><br>
+                                            Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus,
+                                            <span class="quote-icon quote-right">&rdquo;</span>
+                                        </p>
+                                    </div>
+                                    <div class="author-area mt-4">
+                                        <div class="author-avatar"></div>
+                                        <div class="author-info">
+                                            <h5 class="author-info-title">Maria Clara</h5>
+                                            <p>Director, Another Company</p>
+                                        </div>
+                                        <div class="carousel-controls-custom">
+                                            <a href="#testimonialCarousel" role="button" data-bs-slide="prev"
+                                                class="custom-arrow">&#10094;</a>
+                                            <a href="#testimonialCarousel" role="button" data-bs-slide="next"
+                                                class="custom-arrow">&#10095;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial-bubble">
+                                        <span class="quote-icon quote-left">&ldquo;</span>
+                                        <p class="testimonial-text">
+                                            This is the fourth testimonial. Aenean posuere, tortor sed cursus feugiat,
+                                            nunc augue blandit nunc, eu sollicitudin.
+                                            <br><br>
+                                            Mauris turpis nunc, blandit et, volutpat molestie,
+                                            <span class="quote-icon quote-right">&rdquo;</span>
+                                        </p>
+                                    </div>
+                                    <div class="author-area mt-4">
+                                        <div class="author-avatar"></div>
+                                        <div class="author-info">
+                                            <h5 class="author-info-title">Tres Santos</h5>
+                                            <p>CEO, Startup Inc.</p>
                                         </div>
                                         <div class="carousel-controls-custom">
                                             <a href="#testimonialCarousel" role="button" data-bs-slide="prev"
@@ -529,40 +610,44 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
-                            <button class="btn btn-outline-dark">Open in Google Maps</button>
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="contact-icon-no-border"></div>
+                            <a href="https://maps.app.goo.gl/x5kaVojGFNStoQdL9" target="_blank"
+                                class="btn btn-light">Open in Google Maps</a>
                         </div>
-
 
                         <h5>Stay Connected</h5>
                         <div class="social-icons d-flex mt-3 ">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-google"></i>
-                            <i class="bi bi-youtube"></i>
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-linkedin"></i>
-                            <i class="bi bi-tiktok"></i>
+                            <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="" target="_blank"><i class="bi bi-google"></i></a>
+                            <a href="https://www.youtube.com/@positiveexposureproductions" target="_blank"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="" target="_blank"><i class="bi bi-tiktok"></i></a>
                         </div>
 
                     </div>
 
                     <div class="col-md-6 justify-content-center">
                         <h2 class="text-center mb-5">Contact Us</h2>
-                        <p class="text-center text-muted mb-4">Have questions or want to work with us? Send us a
+                        <p class="text-center fc-grey mb-4 ">Have questions or want to work with us? Send us a
                             message!</p>
                         <form action="?" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control required" placeholder="Name*" required>
+                                    <input type="text" class="form-control required fc-grey " placeholder="Name*"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control required" placeholder="Email*" required>
+                                    <input type="email" class="form-control required fc-grey " placeholder="Email*"
+                                        required>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-12 tel">
-                                    <input type="tel" id="phone" class="form-control required "
+                                    <input type="tel" id="phone" class="form-control required fc-grey"
                                         placeholder="Phone Number*" required>
                                 </div>
                             </div>
@@ -570,16 +655,18 @@
 
                             <div class="row">
                                 <div class="col-12">
-                                    <textarea class="form-control required" rows="6" placeholder="Message*"
+                                    <textarea class="form-control required fc-grey" rows="6" placeholder="Message"
                                         required></textarea>
                                 </div>
                             </div>
+                            <div class="g-recaptcha">
+                                <div id="html_element"></div>
+                            </div>
 
-                            <div id="html_element"></div>
                             <br>
                             <div class="row mt-3">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                                    <button type="submit" class="btn btn-outline-dark btn-block">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -591,7 +678,7 @@
     </section>
     <footer class="footer-image py-4">
         <div class="text-center">
-            <p>&copy; 2026 PEP Website. All rights reserved.</p>
+            <p>&copy; 2026 PEP Website <br>All rights reserved.</p>
         </div>
         </div>
     </footer>
@@ -606,6 +693,22 @@
     <script src="js/script.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/header.js"></script>
+    <script>
+        const projectContainer = document.getElementById('project-container');
+        const leftArrow = document.getElementById('left-arrow');
+        const rightArrow = document.getElementById('right-arrow');
+
+        // Amount to scroll per click (Roughly the width of one card + gap)
+        const scrollAmount = 340;
+
+        leftArrow.addEventListener('click', () => {
+            projectContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        rightArrow.addEventListener('click', () => {
+            projectContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    </script>
 </body>
 
 </html>
