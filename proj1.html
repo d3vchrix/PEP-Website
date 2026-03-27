@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Positive Exposure Productions - Video Hub</title>
+    <meta name="title" content="Positive Exposure Productions">
+    <meta name="description"
+        content="Trusted by top brands and government agencies, Positive Exposure Productions delivers expert integrated marketing, tourism consulting, and digital strategies.">
+    <meta name="keywords"
+        content="Trusted by top brands and government agencies, Positive Exposure Productions delivers expert integrated marketing, tourism consulting, and digital strategies.">
+    <meta name="author" content="Positive Exposure Productions">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:title" content="Positive Exposure Productions">
+    <meta property="og:description"
+        content="Trusted by top brands and government agencies, Positive Exposure Productions delivers expert integrated marketing, tourism consulting, and digital strategies.">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/social-preview.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/recolor.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <style>
+        .video-title-truncate {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.2;
+        }
+
+        .recommended-video:hover {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .comment-input {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: transparent;
+        }
+
+        .comment-input:focus {
+            box-shadow: none;
+            border-bottom: 2px solid #000;
+        }
+
+        .comment-action-btn {
+            font-size: 0.9rem;
+            color: #606060;
+            text-decoration: none;
+        }
+
+        .comment-action-btn:hover {
+            color: #000;
+        }
+
+        .video-size-custom {
+            width: auto;
+            height: 50vh;
+        }
+
+        .desc-text {
+            line-height: 1.5;
+            transition: max-height 0.5s ease-in-out;
+            overflow: hidden;
+        }
+
+        .desc-text {
+            line-height: 1.5;
+            transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            display: block;
+        }
+
+        .desc-truncate {
+            max-height: 3em;
+        }
+
+        .desc-expanded {
+            max-height: 1000px;
+        }
+
+        .btn-icon-transition {
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .icon-rotated {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/brands/PEP Logo.png" alt="Positive Exposure Logo">
+                </a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">What We Do</a></li>
+                    <li><a href="#">Our Work</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="ourwork-marketing.html">Integrated Marketing Communications</a></li>
+                            <li><a href="ourwork-tourism.html">Integrated Tourism Development & Consulting</a></li>
+                            <li><a href="ourwork-ict.html">Information & Communications Technology Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News & Update</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a class="search-btn"><i class="bi bi-search"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section id="video-player-section" class="py-5 mt-4">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 mb-4">
+                    <div class="ratio ratio-16x9 mb-3 shadow-sm rounded overflow-hidden video-size-custom">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/9c_L3LsT81U?si=A1BKMrted-6etzno"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-info">
+                        <h4 class="fw-bold mb-2">Thank God It’s the Weekend Travel Show (TGIW)</h4>
+                        <div class="bg-light p-3 rounded fc-grey">
+                            <p class="mb-0 fw-bold">Thank God It’s the Weekend Travel Show (TGIW) (2019)</p>
+                            <p class="mb-0 mt-2 desc-text desc-truncate">A 30-minute weekly lifestyle and travel
+                                television program produced by
+                                Positive Exposure Productions, Inc., designed to showcase the Philippines’ diverse
+                                tourism destinations and rich culinary heritage. Hosted by renowned travel personality
+                                Ms. Maggie Wilson, the program features curated travel experiences, local culture,
+                                gastronomy, and destination stories that highlight the country’s unique offerings to
+                                both domestic and international audiences.
+                                The program was launched as a 10-episode season distributed across digital platforms and
+                                aired on CNN Philippines in 2019, where it was recognized for its premium production
+                                value and strong audience engagement. Through immersive storytelling, destination
+                                features, and personality-driven narratives, TGIW contributed to strengthening tourism
+                                awareness and positioning Philippine destinations within a modern lifestyle and travel
+                                context.
+                                As part of Positive Exposure’s integrated tourism communications initiatives, the
+                                program served as a strategic media platform supporting destination promotion,
+                                stakeholder visibility, and experiential tourism storytelling aligned with national
+                                tourism development objectives.
+
+                            </p>
+
+                            <div class="d-flex">
+                                <button
+                                    class="btn btn-link p-0 text-dark fw-bold text-decoration-none mt-2 d-flex align-items-center gap-1 ms-auto"
+                                    id="readMoreBtn" onclick="toggleDescription()">
+                                    <span id="readMoreText">Show more</span>
+                                    <i class="bi bi-chevron-down btn-icon-transition" id="readMoreIcon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments-section mt-4 pt-3">
+                        <div class="comments-list">
+                            <div class="d-flex mb-4 justify-content-start">
+                                <div><img src="https://ui-avatars.com/api/?name=Sarah+M&background=0D8ABC&color=fff"
+                                        alt="User" class="rounded-circle me-3" width="40" height="40">
+                                </div>
+                                <div>
+                                    <h6 class="m-0 fw-bold fs-6">@Mark_Villanueva92<span
+                                            class="fw-normal text-muted ms-2" style="font-size: 0.8rem;">2 weeks
+                                            ago</span></h6>
+                                    <p class="mb-1 text-dark">I've visited Batangas so many times, but I never knew
+                                        about that hidden heritage spot you featured in Segment 2! Beautifully captured.
+                                        Can't wait to see what you guys explore in the next episode.</p>
+                                    <div class="d-flex align-items-center gap-3 mt-1">
+                                        <button class="btn btn-link comment-action-btn p-0"><i
+                                                class="bi bi-hand-thumbs-up"></i>
+                                            245</button>
+                                        <button class="btn btn-link comment-action-btn p-0"><i
+                                                class="bi bi-hand-thumbs-down"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4 justify-content-start">
+                                <div><img src="https://ui-avatars.com/api/?name=Tech+Guru&background=28a745&color=fff"
+                                        alt="User" class="rounded-circle me-3" width="40" height="40">
+                                </div>
+                                <div>
+                                    <h6 class="m-0 fw-bold fs-6">@WandererElena<span class="fw-normal text-muted ms-2"
+                                            style="font-size: 0.8rem;">1 month
+                                            ago</span></h6>
+                                    <p class="mb-1 text-dark">Wow, I had no idea the dive spots in Anilao were this
+                                        vibrant! 🐠 I'm definitely adding this to my summer itinerary. Great job
+                                        highlighting the local conservation efforts, too. Keep up the amazing work!</p>
+                                    <div class="d-flex align-items-center gap-3 mt-1">
+                                        <button class="btn btn-link comment-action-btn p-0"><i
+                                                class="bi bi-hand-thumbs-up"></i>
+                                            89</button>
+                                        <button class="btn btn-link comment-action-btn p-0"><i
+                                                class="bi bi-hand-thumbs-down"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-image py-4">
+        <div class="text-center">
+            <p>© 2026 PEP Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/header.js"></script>
+
+    <script>
+        document.querySelector('.comment-input').addEventListener('focus', function () {
+            document.getElementById('comment-buttons').classList.remove('d-none');
+        });
+
+        function toggleDescription() {
+            const descText = document.querySelector('.desc-text');
+            const btnText = document.getElementById('readMoreText');
+            const icon = document.getElementById('readMoreIcon');
+
+            if (descText.classList.contains('desc-truncate')) {
+                descText.classList.remove('desc-truncate');
+                descText.classList.add('desc-expanded');
+                btnText.innerText = 'Show less';
+                icon.classList.add('icon-rotated');
+            } else {
+                descText.classList.remove('desc-expanded');
+                descText.classList.add('desc-truncate');
+                btnText.innerText = 'Show more';
+                icon.classList.remove('icon-rotated');
+            }
+        }
+    </script>
+</body>
+
+</html>
