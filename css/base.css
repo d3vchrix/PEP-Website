@@ -450,7 +450,8 @@ nav ul li ul li a {
 .projects {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   scrollbar-width: none;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -853,6 +854,9 @@ nav ul li ul li a {
   .nav-container {
     padding: 0 20px;
   }
+  .project-item {
+    flex: 0 0 25%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -961,6 +965,9 @@ nav ul li ul li a {
   .author-info-title{
     margin: 0;
   }
+  .project-item {
+    flex: 0 0 50%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1008,6 +1015,10 @@ nav ul li ul li a {
     margin: 0px;
     padding: 0px;
   }
+  .project-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
 }
 
 @media (max-width: 340px) {
@@ -1020,22 +1031,4 @@ nav ul li ul li a {
     margin: 0px;
     padding: 0px;
   }
-}
-
-.custom-project-info-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 1rem;
-    background-color: #fff;
-    border: 1px solid #eaeaea;
-    border-top: none;
-}
-.custom-swipe-container {
-    overflow-x: auto !important; /* Overrides overflow-hidden safely */
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* Enables buttery smooth scrolling on iOS */
-    scroll-snap-type: x mandatory; /* Snaps exactly to each project card */
-    gap: 1.5rem; /* Spacing between cards */
-    padding-bottom: 1rem; /* Prevents scrollbar from overlapping content */
 }
