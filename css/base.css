@@ -12,8 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
+html,body {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -23,12 +22,7 @@ body {
   min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   margin: 10px 0;
   padding: 10px 0;
   color: #000;
@@ -36,6 +30,11 @@ h6 {
 
 .iti {
   width: 100%;
+  color: #899096;
+}
+
+.iti,.iti * {
+  transition: none !important;
 }
 
 .tel {
@@ -46,14 +45,37 @@ h6 {
   color: #000;
 }
 
-#contact-form{
+#contact-form {
   min-height: 85vh;
 }
-.who-we-are-image{
+
+.who-we-are-image {
   width: auto;
   height: auto;
   max-height: 50vh;
 }
+
+.mission-h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.fc-grey {
+  color: #899096;
+}
+
+.form-control::placeholder {
+  color: #899096;
+  opacity: 1;
+}
+
+.g-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
 /* ==========================================================================
    SEARCH BOX STYLES (Desktop)
    ========================================================================== */
@@ -64,6 +86,7 @@ h6 {
   padding: 0 20px;
   height: 70px;
 }
+
 .search-toggle {
   background: none;
   border: none;
@@ -85,12 +108,12 @@ h6 {
   right: 20px;
   background: #fff;
   padding: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 0 0 8px 8px;
   display: none;
   z-index: 1000;
   min-width: 250px;
-  border-top: 3px solid #313131; 
+  border-top: 3px solid #313131;
 }
 
 .search-dropdown.show-search {
@@ -113,6 +136,7 @@ h6 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
+
 .search-submit:hover {
   background: #333;
 }
@@ -122,7 +146,7 @@ h6 {
    ========================================================================== */
 .navigation {
   min-height: 70px;
-  height: auto; 
+  height: auto;
   background: #ffffff;
   position: relative;
 }
@@ -293,6 +317,7 @@ nav ul li ul li a {
   display: flex;
   align-items: center;
   padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hero h1 {
@@ -318,8 +343,6 @@ nav ul li ul li a {
   z-index: 0;
   transition: opacity 1.5s ease-in-out;
 }
-
-/* Background Gradients & Images */
 .hero-header {
   background-image:
     var(--bg-img, url('images/01.jpg')),
@@ -333,6 +356,7 @@ nav ul li ul li a {
   background-position: center, left top, left top, right top, 60% 120%, center, top left;
   background-repeat: no-repeat;
   background-blend-mode: multiply, overlay, overlay, overlay, overlay, normal, normal;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   color: white;
 }
 
@@ -348,6 +372,7 @@ nav ul li ul li a {
   background-position: center, left top, left top, right top, 60% 120%, center, top left;
   background-repeat: no-repeat;
   background-blend-mode: multiply, overlay, overlay, overlay, overlay, normal, normal;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   color: white;
 }
 
@@ -362,6 +387,7 @@ nav ul li ul li a {
   background-position: left top, right top, 60% 120%, center, top left;
   background-repeat: no-repeat;
   background-blend-mode: overlay, overlay, overlay, multiply;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   color: white;
 }
 
@@ -376,17 +402,8 @@ nav ul li ul li a {
   background-position: left top, right top, 60% 120%, center, top left;
   background-repeat: no-repeat;
   background-blend-mode: overlay, overlay, overlay, multiply;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   color: white;
-}
-
-.hero-wrapper {
-  width: 100%;
-  min-height: 80vh;
-  background-image: url('css/images/01.jpg'), url('css/images/bg-banner.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: hue;
 }
 
 .hero-title,
@@ -526,8 +543,18 @@ nav ul li ul li a {
   color: #ffffff;
 }
 
+.lead-custom {
+  font-size: 1rem;
+}
+
 .text-muted-custom {
   color: #c0c0c0 !important;
+}
+
+.fw-normal-custom {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
 }
 
 .testimonial-bubble {
@@ -667,6 +694,17 @@ nav ul li ul li a {
   justify-content: center;
 }
 
+.contact-icon-no-border {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ==========================================================================
    8. COMPONENTS (Tabs, Socials, Utilities)
    ========================================================================== */
@@ -679,6 +717,7 @@ nav ul li ul li a {
 
 .who-we-are {
   background-color: #f7f9f9;
+  border-top: #f1f3f3 solid 5px;
 }
 
 .service-tabs .service-tab {
@@ -746,7 +785,6 @@ nav ul li ul li a {
   justify-content: center;
 }
 
-/* Back to top button */
 .scroll-top-btn {
   position: fixed;
   bottom: 30px;
@@ -781,7 +819,6 @@ nav ul li ul li a {
   transform: translateY(-3px);
 }
 
-/* Latest news placeholders */
 .placeholder-box {
   background-color: #ededed;
   border-radius: 8px;
@@ -828,6 +865,9 @@ nav ul li ul li a {
   .nav-list {
     display: block !important;
   }
+  .author-info-title{
+    margin: 0;
+  }
 }
 
 @media (max-width: 798px) {
@@ -849,10 +889,10 @@ nav ul li ul li a {
     position: relative;
   }
 
- nav ul {
-    position: relative; /* Your fix! */
-    clear: both; /* Forces the menu to drop below the logo/hamburger */
-    width: 100%; 
+  nav ul {
+    position: relative;
+    clear: both;
+    width: 100%;
     background: #fff;
     display: none;
     padding-bottom: 20px;
@@ -882,12 +922,13 @@ nav ul li ul li a {
   .search-item {
     height: auto;
     padding: 15px 20px;
-    display: block; 
+    display: block;
   }
-  
+
   .search-toggle {
-    display: none; 
+    display: none;
   }
+
   .search-dropdown {
     position: static;
     display: flex !important;
@@ -895,6 +936,10 @@ nav ul li ul li a {
     padding: 0;
     min-width: 100%;
     border-top: none;
+  }
+  .author-info-title{
+    margin: 0px;
+    padding: 0px;
   }
 }
 
@@ -911,6 +956,10 @@ nav ul li ul li a {
 
   .hero-subtitle {
     font-size: 0.9rem;
+  }
+
+  .author-info-title{
+    margin: 0;
   }
 }
 
@@ -950,9 +999,43 @@ nav ul li ul li a {
     padding: 10px;
   }
 
-  /* Adjust search box for mobile */
   .search-item {
     height: auto;
     padding: 15px 20px;
   }
+  
+  .author-info-title{
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 340px) {
+  .g-recaptcha {
+    transform: scale(0.85);
+    transform-origin: 0 0;
+  }
+
+  .author-info-title{
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.custom-project-info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1rem;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-top: none;
+}
+.custom-swipe-container {
+    overflow-x: auto !important; /* Overrides overflow-hidden safely */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Enables buttery smooth scrolling on iOS */
+    scroll-snap-type: x mandatory; /* Snaps exactly to each project card */
+    gap: 1.5rem; /* Spacing between cards */
+    padding-bottom: 1rem; /* Prevents scrollbar from overlapping content */
 }

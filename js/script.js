@@ -1,3 +1,10 @@
+const input = document.querySelector("#phone");
+window.intlTelInput(input, {
+    initialCountry: "ph",
+    separateDialCode: true,
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.1.0/build/js/utils.js",
+});
+
 const projectContainer = document.getElementById('project-container');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
@@ -53,9 +60,3 @@ if (words3.length > limit3) {
     element3.innerText = words3.slice(0, limit3).join(' ') + '...';
 }
 
-const input = document.querySelector("#phone");
-window.intlTelInput(input, {
-    initialCountry: "ph",
-    separateDialCode: true,
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.1.0/build/js/utils.js",
-});
