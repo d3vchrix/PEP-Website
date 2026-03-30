@@ -1071,3 +1071,40 @@ nav ul li ul li a {
     padding: 0px;
   }
 }
+
+  .fc-white {
+            color: white !important;
+        }
+
+        .contact-form-container {
+            background-color: #333333;
+            border-radius: 20px;
+            padding: 40px;
+            color: white;
+        }
+
+        .form-control {
+            border-radius: 20px;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        .btn-book {
+            background-color: #FFD700 !important;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            width: 100%;
+            padding: 12px;
+        }
+
+        .side-nav a {
+            text-decoration: none;
+            color: #666;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .side-nav a:hover {
+            color: #000;
+        }

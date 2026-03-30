@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -41,6 +42,11 @@
             });
         };
     </script>
+
+    <style>
+      
+    </style>
+
 </head>
 
 
@@ -82,95 +88,94 @@
         </div>
     </section>
 
-    <section id="contact-form">
-        <div class="py-5">
+    <section id="hero">
+        <div class="hero-medium hero-header-no-image text-center justify-content-center align-items-center">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 justify-content-center">
-                        <h2 class="text-center mb-5"> Contact Information </h2>
-                        <p class="text-center text-muted mb-4">Get in touch with us!</p>
-                        <p>Great ideas shouldn’t stay stuck in your head. Whether you’re looking to launch the next big
-                            thing or transform a spark into a full-scale project, we’re ready to dive in. </p>
+                <div class="hero-title">
+                    <h1 class="text-uppercase ">Contact us</h1>
+                </div>
 
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-                            <span>(+6328) 291-5124</span>
-                        </div>
+                <div class="col-8 col-md-6 mx-auto">
+                    <p class="hero-subtitle">Have questions or want to work with us? Send us a message!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
-                            <span>admin@pepmedia.ph</span>
-                        </div>
+    <section id="contact-form">
+        <div class="container p-5">
+            <div class="row dflex align-items-start justify-content-center">
+                <div class="col-md-3 side-nav pt-4 pb-3">
+                    <a href="#">Careers</a>
+                    <a href="#">Product Support</a>
+                    <a href="#">General Contract</a>
+                    <a href="#">Press Inquiries</a>
 
-                        <!-- <div class="d-flex align-items-start mb-4">
-                            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                    <div class="mt-5 pt-5">
+                        <h6 class="fw-bold">Address</h6>
+                        <a href="https://maps.app.goo.gl/x5kaVojGFNStoQdL9" target="_blank" style="cursor: pointer;">
                             <div class="address-text">
                                 2507 Tycoon Corporate Centre<br>
-                                Pearl Drive, Brgy. San Antonio<br>
-                                Pasig City<br>
-                                1605 Philippines
+                                Pearl Drive, Brgy San Antonio, <br>
+                                Pasig City 1605 Philippines
                             </div>
-                        </div>
-
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="contact-icon-no-border"></div>
-                             <a href="https://maps.app.goo.gl/x5kaVojGFNStoQdL9" target="_blank" class="btn btn-outline-dark">Open in Google Maps</a>
-                        </div> -->
-
-                        <div class="social-icons d-flex mt-5 pt-5 justify-content-center align-items-center">
-                            <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
-                            <a href="" target="_blank"><i class="bi bi-google"></i></a>
-                            <a href="https://www.youtube.com/@positiveexposureproductions" target="_blank"><i
-                                    class="bi bi-youtube"></i></a>
-                            <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
-                            <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
-                            <a href="" target="_blank"><i class="bi bi-tiktok"></i></a>
-                        </div>
-
+                        </a>
                     </div>
+                </div>
 
-                    <div class="col-md-6 justify-content-center">
-                        <h2 class="text-center mb-5">Contact Us</h2>
-                        <p class="text-center fc-grey mb-4 ">Have questions or want to work with us? Send us a
-                            message!</p>
-                        <form action="?" method="POST">
+                <div class="col-md-7">
+                    <div class="contact-form-container shadow">
+                        <h2 class="fw-bold mb-1">Book Meeting Now!</h2>
+                        <p class="text-secondary mb-4 fc-white">Schedule a consultation with our experts today.</p>
+
+                        <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control required fc-grey " placeholder="Name*"
+                                    <label class="form-label small">Name</label>
+                                    <input type="text" class="form-control  fc-grey" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Company</label>
+                                    <input type="text" class="form-control  fc-grey" placeholder="Company" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Phone</label>
+                                    <input type="tel" id="phone" class="form-control  fc-grey"
+                                        placeholder="Phone Number*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Email</label>
+                                    <input type="email" class="form-control  fc-grey" placeholder="Email Address"
                                         required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control required fc-grey " placeholder="Email*"
-                                        required>
+                                    <label class="form-label small">Date</label>
+                                    <input type="date" class="form-control  fc-grey" required>
                                 </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12 tel">
-                                    <input type="tel" id="phone" class="form-control required fc-grey"
-                                        placeholder="Phone Number*" required>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Meeting Duration</label>
+                                    <select class="form-select form-control  fc-grey" required>
+                                        <option selected>Duration</option>
+                                        <option value="1">30 Mins</option>
+                                        <option value="2">1 Hour</option>
+                                    </select>
                                 </div>
-                            </div>
-
-
-                            <div class="row">
                                 <div class="col-12">
-                                    <textarea class="form-control required fc-grey" rows="6" placeholder="Message*"
-                                        required></textarea>
+                                    <label class="form-label small">Message</label>
+                                    <textarea class="form-control  fc-grey" rows="4" required></textarea>
                                 </div>
-                            </div>
-                            <div class="g-recaptcha">
-                                <div id="html_element"></div>
-                            </div>
 
-                            <br>
-                            <div class="row mt-3">
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-outline-dark btn-block">Submit</button>
+                                <div class="g-recaptcha">
+                                    <div id="html_element"></div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-book">Book Now</button>
                                 </div>
                             </div>
                         </form>
-
+                        <div class="mt-3 small ">
+                            <i class="bi bi-check-lg text-success"></i> The form was sent successfully.
+                        </div>
                     </div>
                 </div>
             </div>
